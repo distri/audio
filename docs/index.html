@@ -84,12 +84,8 @@
 sounds = {}
 globalVolume = <span class="number">1</span>
 
-<span class="comment"># TODO: Allow configuration of base path</span>
-<span class="comment"># TODO: Figure out audio resources</span>
-basePath = <span class="string">"http://strd6.github.io/cdn/assets/"</span>
-
 <span class="function"><span class="title">loadSoundChannel</span></span> = (name) -&gt;
-  url = <span class="string">"<span class="subst">#{basePath}</span>/<span class="subst">#{name}</span>.<span class="subst">#{format}</span>"</span>
+  url = <span class="string">"<span class="subst">#{Sound.basePath}</span>/<span class="subst">#{name}</span>.<span class="subst">#{format}</span>"</span>
 
   sound = extend document.createElement(<span class="string">"audio"</span>),
     autobuffer: <span class="literal">true</span>
@@ -103,7 +99,9 @@ module.exports = <span class="function"><span class="title">Sound</span></span> 
   stop: -&gt;
     Sound.stop(id)
 
-extend Sound,</code></pre>
+extend Sound,
+  <span class="comment"># TODO: Figure out handling of audio resources better</span>
+  basePath: <span class="string">"http://www.danielx.net/cdn/assets/"</span></code></pre>
 </div>
         </li>
         
