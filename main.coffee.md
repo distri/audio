@@ -20,12 +20,8 @@ Implementation
     sounds = {}
     globalVolume = 1
 
-    # TODO: Allow configuration of base path
-    # TODO: Figure out audio resources
-    basePath = "http://strd6.github.io/cdn/assets/"
-
     loadSoundChannel = (name) ->
-      url = "#{basePath}/#{name}.#{format}"
+      url = "#{Sound.basePath}/#{name}.#{format}"
 
       sound = extend document.createElement("audio"),
         autobuffer: true
@@ -38,8 +34,10 @@ Implementation
 
       stop: ->
         Sound.stop(id)
-  
+
     extend Sound,
+      # TODO: Figure out handling of audio resources better
+      basePath: "http://www.danielx.net/cdn/assets/"
 
 Set the global volume modifier for all sound effects.
 
