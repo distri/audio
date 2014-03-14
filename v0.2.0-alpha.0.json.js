@@ -15,7 +15,7 @@ window["distri/audio:v0.2.0-alpha.0"]({
     "pixie.cson": {
       "path": "pixie.cson",
       "mode": "100644",
-      "content": "version: \"0.2.0-alpha.0\"\ndependencies:\n  observable: \"distri/observable:v0.1.0\"\n",
+      "content": "version: \"0.2.0-alpha.1\"\ndependencies:\n  observable: \"distri/observable:v0.1.0\"\n",
       "type": "blob"
     },
     "test/sound.coffee": {
@@ -70,7 +70,7 @@ window["distri/audio:v0.2.0-alpha.0"]({
   "distribution": {
     "pixie": {
       "path": "pixie",
-      "content": "module.exports = {\"version\":\"0.2.0-alpha.0\",\"dependencies\":{\"observable\":\"distri/observable:v0.1.0\"}};",
+      "content": "module.exports = {\"version\":\"0.2.0-alpha.1\",\"dependencies\":{\"observable\":\"distri/observable:v0.1.0\"}};",
       "type": "blob"
     },
     "test/sound": {
@@ -117,7 +117,7 @@ window["distri/audio:v0.2.0-alpha.0"]({
   "progenitor": {
     "url": "http://strd6.github.io/editor/"
   },
-  "version": "0.2.0-alpha.0",
+  "version": "0.2.0-alpha.1",
   "entryPoint": "main",
   "repository": {
     "id": 17075989,
