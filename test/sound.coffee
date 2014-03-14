@@ -1,5 +1,5 @@
-Sound = require "/main"
+Sound = require "/sound"
 
 describe "Sound", ->
-  it "Should do stuff", ->
-    assert Sound.play
+  it "should be able to play from urls", ->
+    assert Sound.playFromURL
